@@ -1,1 +1,95 @@
-<head><script defer src="main.js"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="main.js"></script></head>
+<body>
+    <header>
+        <h1>My To-Do List</h1>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Projects</h2>
+            <div id="projectDisplay"></div>
+            <button id="showProjectForm">+ Add Project</button>
+        </aside>
+
+        <section>
+            <h2 id="todoHeader">  </h2>
+            <div id="todoDisplay"></div>
+            <button id="showTodoForm">+ Add Todo</button>
+        </section>
+    </main>
+
+    <form id="projectForm" style="display: none;">
+        <h3>New Project</h3>
+        <input type="text" id="projectName" name="name" placeholder="Project name" required>
+        <div>
+            <button type="button" id="cancelProject">Cancel</button>
+            <input type="submit" value="Create Project">
+        </div>
+    </form>
+
+    <form id="todoForm" style="display: none;">
+        <h3>New Todo</h3>
+        <input type="text" id="todoTitle" placeholder="Title" required>
+        <input type="date" id="todoDueDate">
+        <select id="todoPriority">
+            <option value="Low">Low</option>
+            <option value="Medium">medium</option>
+            <option value="High">High</option>
+        </select>
+        <textarea id="todoDescription" placeholder="Description..."></textarea>
+
+        <label for="projectSelect">Project:</label>
+        <select id="projectSelect"></select>
+
+        <div>
+            <button type="button" id="cancelTodo">Cancel</button>
+            <input type="submit" value="Create Todo">
+        </div>
+    </form>
+    <!-- <div id="container">
+        <div class="projectContainer">
+            <button id="showProjectForm">Add New Project</button>
+            <div id="projectDisplay">
+            </div>
+        </div>
+        <div class="todoContainer">
+            <button class="addTodo">Add Todo</button>
+            <div id="todoDisplay">
+            </div>
+        </div>
+    </div>
+
+    <form id="projectForm" style="display: none;">
+        <label for="name">Project Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <div>
+            <button id="closeProjectForm">Cancel</button>
+            <input type="submit" value="Submit" id="submitProjectForm">
+
+        </div>
+    </form>
+
+    <form id="todoForm" style="display: none;">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="description">Description</label><br>
+        <textarea id="description" name="description"></textarea><br>
+
+        <label for="projectSelected">Choose a Project:</label><br>
+        <select id="projectSelected" name="projectId" required>
+            
+        </select>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate">
+    </form> -->
+</body>
+</html>
